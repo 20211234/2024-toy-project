@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_background"
+    android:orientation="vertical"
+    tools:context=".SignUpActivity">
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="66dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="회원가입"
+        android:textSize="30sp"
+        android:textStyle="normal" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="51dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/signup_phone"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey_border"
+            android:ems="11"
+            android:hint="휴대폰 번호"
+            android:inputType="phone"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textColorHint="@color/grey_border"
+            android:textSize="22sp" />
+
+        <EditText
+            android:id="@+id/signup_password"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey_border"
+            android:layout_marginTop="36dp"
+            android:hint="비밀번호"
+            android:inputType="textPassword"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textColorHint="@color/grey_border"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text=" 8~16자 영문 대소문자, 숫자, 특수문자를 사용하세요."
+            android:textSize="12sp" />
+
+        <EditText
+            android:id="@+id/signup_name"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/grey_border"
+            android:layout_marginTop="36dp"
+            android:hint="성명"
+            android:inputType="textPersonName"
+            android:selectAllOnFocus="false"
+            android:singleLine="true"
+            android:textColorHint="@color/grey_border"
+            android:textSize="22sp"
+            />
+
+        <TextView
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="40dp"
+            android:text="생년월일"
+            android:textSize="12sp" />
+
+        <!-- Numberpicker를 활용한 생년월일 선택 뷰 구현 방법 확인 필요 -->
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="100dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="27dp" />
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="24dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+        <android.widget.Button
+            android:id="@+id/signup_enter"
+            android:layout_width="343dp"
+            android:layout_height="57dp"
+            android:background="@color/grey_button"
+            android:text="확인"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+</LinearLayout>
