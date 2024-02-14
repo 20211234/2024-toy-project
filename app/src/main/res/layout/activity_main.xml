@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/grey_background"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <!-- original -->
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="63dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="78dp"
+        android:layout_marginBottom="27dp"
+        android:src="@drawable/main_logo" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:text="밴드는 나와 연결된 모임을 더욱 끈끈하게\n만들어 주는 글로벌 no.1 모임앱 입니다."
+        android:textAlignment="center"
+        android:textSize="16sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal|bottom"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/main_login"
+            android:layout_width="343dp"
+            android:layout_height="68dp"
+            android:backgroundTint="@color/lightgreen"
+            android:text="로그인"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/main_signup"
+            android:layout_width="343dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="19dp"
+            android:layout_marginBottom="54dp"
+            android:backgroundTint="@color/green"
+            android:text="회원가입"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+</LinearLayout>
