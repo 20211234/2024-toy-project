@@ -57,6 +57,7 @@ class LoginActivity : AppCompatActivity() {
         val start = str.indexOf("회원가입")
         val end = start + "회원가입".length
 
+        // '회원가입' 글자 스타일 정의
         val boldSpan = StyleSpan(Typeface.BOLD)
         val clickableSpan: ClickableSpan = object : ClickableSpan() {
             override fun onClick(widget: View) {
@@ -70,11 +71,11 @@ class LoginActivity : AppCompatActivity() {
             }
         }
 
+        // '회원가입' 글자 스타일 적용
         spannableString.setSpan(boldSpan, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
         spannableString.setSpan(clickableSpan, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE)
 
         signUpText.text = spannableString
         signUpText.movementMethod = LinkMovementMethod.getInstance()
-
     }
 }
