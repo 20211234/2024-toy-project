@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/grey_background"
+    android:orientation="vertical"
+    tools:context=".PostListActivity">
+
+    <ImageView
+        android:src="@drawable/postlist_banner"
+        android:layout_width="match_parent"
+        android:layout_height="270dp"
+        />
+
+    <!-- 모임 정보 영역 시작 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <!-- 모임 정보 좌측 영역 시작 -->
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="100dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="15dp"
+                android:text="모임명"
+                android:textAlignment="center"
+                android:textSize="30sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="8dp"
+                    android:text="인원수 23"
+                    android:textAlignment="center"
+                    android:textSize="15sp" />
+
+                <LinearLayout
+                    android:id="@+id/postlist_invite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:padding="10dp"
+                    >
+
+                    <ImageView
+                        android:src="@drawable/postlist_invite"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="6dp"
+                        android:layout_marginRight="4dp"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="초대"
+                        android:textColor="@color/green"
+                        android:textAlignment="center"
+                        android:textSize="15sp" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+        <!-- 모임 정보 좌측 영역 끝 -->
+
+        <!-- 모임 정보 우측 영역 시작 -->
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            >
+
+            <Button
+                android:id="@+id/postlist_write_post"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal|center"
+                android:backgroundTint="@color/green"
+                android:text="글쓰기"
+                android:textColor="@color/white"
+                android:textSize="15sp" />
+        </LinearLayout>
+        <!-- 모임 정보 우측 영역 끝 -->
+    </LinearLayout>
+    <!-- 모임 정보 영역 끝 -->
+
+    <!-- 게시글 서식 시작 -->
+    <!-- 게시글 정보 영역 시작 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:background="@color/white"
+        android:layout_marginTop="10dp">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="100dp"
+            >
+            <ImageView
+                android:src="@drawable/all_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="320dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+
+                android:text="멤버A"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:text="2024년 05월 07일 화요일 오후 3시 00분"
+                android:textColor="@color/grey_text"
+                android:textAlignment="center"
+                android:textSize="12sp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="15dp"
+            >
+
+            <ImageView
+                android:src="@drawable/all_kebob"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"/>
+
+        </LinearLayout>
+    </LinearLayout>
+    <!-- 게시글 정보 영역 끝 -->
+
+    <!-- 게시글 내용 영역 시작 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="5dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="행복한 5월 보내세요!"
+            android:textSize="20sp"/>
+
+    </LinearLayout>
+    <!-- 게시글 내용 영역 끝 -->
+
+    <!-- 댓글 개수 영역 시작 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="댓글 1"
+            android:textAlignment="center"
+            android:textColor="@color/grey_text"
+            android:textSize="12sp" />
+    </LinearLayout>
+    <!-- 댓글 개수 영역 끝 -->
+
+    <!-- 댓글 남기기 영역 시작 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:background="@color/white"
+        android:paddingTop="10dp"
+
+        >
+
+        <Button
+            android:id="@+id/postlist_write_comment"
+            android:layout_width="395dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal|center"
+            android:backgroundTint="@color/green"
+            android:text="댓글 남기기"
+            android:textColor="@color/white"
+            android:textSize="15sp" />
+
+
+    </LinearLayout>
+    <!-- 댓글 남기기 영역 끝 -->
+
+    <!-- 댓글 내용 영역 시작 -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="24dp"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            >
+            <ImageView
+                android:src="@drawable/all_default"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:text="멤버B"
+                android:textAlignment="center"
+                android:textSize="15sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="행복 is 종강"
+                android:textSize="18sp"
+                android:layout_marginLeft="15dp"
+                />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="5dp"
+            android:text="15:32"
+            android:textColor="@color/grey_text"
+            android:textAlignment="center"
+            android:textSize="12sp" />
+
+        <ImageView
+            android:src="@drawable/all_kebob"
+            android:padding="15dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+    <!-- 댓글 내용 영역 끝 -->
+    <!-- 게시글 서식 끝 -->
+
+</LinearLayout>
