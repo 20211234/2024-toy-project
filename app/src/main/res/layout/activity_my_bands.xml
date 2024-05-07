@@ -9,25 +9,23 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:gravity="center_horizontal">
+        android:layout_height="wrap_content">
 
         <ImageView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_gravity="center_horizontal"
+            android:padding="10dp"
             android:src="@drawable/mybands_band" />
 
         <View
-            android:layout_width="230dp"
+            android:layout_width="240dp"
             android:layout_height="match_parent" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:gravity="center_horizontal|center"
-            android:paddingRight="30dp"
-            android:paddingBottom="30dp"
+            android:padding="10dp"
             android:orientation="horizontal">
 
             <ImageView
@@ -45,26 +43,40 @@
                 android:text="설정"
                 android:textAlignment="center"
                 android:textSize="16sp" />
-
         </LinearLayout>
-
-
-
     </LinearLayout>
 
-    <View
+     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="49dp" />
-
-    <TextView
-        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_gravity="center_horizontal"
-        android:text="내 모임"
-        android:textSize="30sp"/>
+        android:gravity="center_horizontal">
 
-    <View
+        <TextView
+            android:id="@+id/mybands_home_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="홈"
+            android:layout_marginRight="32dp"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/mybands_alert_fragment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:text="알람"
+            android:padding="5dp"
+            android:textAlignment="center"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fragmentContainer"
         android:layout_width="match_parent"
-        android:layout_height="51dp" />
+        android:layout_height="match_parent"
+        android:layout_weight="1" />
 
 </LinearLayout>
