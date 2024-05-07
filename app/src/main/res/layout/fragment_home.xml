@@ -32,8 +32,30 @@
             android:text="내 모임"
             android:textSize="30sp"
             android:layout_marginTop="25dp"
+            android:layout_marginBottom="12dp"
             android:layout_marginLeft="10dp"
             />
+
+
+        <GridView
+            android:id="@+id/mybands_group_list"
+            android:layout_width="343dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            />
+
+        <Button
+            android:id="@+id/mybands_newgroup"
+            android:layout_width="343dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:padding="15dp"
+            android:layout_gravity="center"
+            android:backgroundTint="@color/green"
+            android:text="+ 새 모임 만들기"
+            android:textSize="18sp" />
+
+
 
     </LinearLayout>
 </FrameLayout>
