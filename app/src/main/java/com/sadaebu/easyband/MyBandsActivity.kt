@@ -12,15 +12,14 @@ class MyBandsActivity : AppCompatActivity() {
         // Home Fragment를 초기 화면으로 설정
         replaceFragment(HomeFragment())
 
-        val goHomeFragment: TextView = findViewById(R.id.mybands_home_fragment)
-        val goAlertFragment: TextView = findViewById(R.id.mybands_alert_fragment)
-
         // Home Fragment로 이동
+        val goHomeFragment: TextView = findViewById(R.id.mybands_home_fragment)
         goHomeFragment.setOnClickListener {
             replaceFragment(HomeFragment())
         }
 
         // Alert Fragment로 이동
+        val goAlertFragment: TextView = findViewById(R.id.mybands_alert_fragment)
         goAlertFragment.setOnClickListener {
             replaceFragment(AlertFragment())
         }
